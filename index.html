@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event </title>
+    <style>
+        body{
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0px;
+            padding:0px;
+            background-color: #f4f6f9;
+            color:#333;
+        }
+        header{
+            text-align: center;
+            padding: 25px 0;
+            background-color:#4CAF50;
+            color: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        header h1{
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav{
+            background-color: #343a40;
+            text-align: center;
+            padding: 10px 0;
+        }
+        nav a{
+            color:#ffffff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: 600;
+            font-size: 1.5rem;
+            letter-spacing: 0.5px;
+        }
+        nav a:hover{
+            text-decoration: underline;
+            color: #ff6347;
+        }
+        section{
+            padding: 25px;
+            margin: 20px auto;
+            max-width: 900px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow:  0 2px 10px rgba(0, 0, 0, 0.1);
+            transition:  0.3s ease;
+         }
+         section:hover{
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+         }
+         section h2{
+            color: #4CAF50;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+         }
+         table{
+            width:100%;
+            border-collapse: collapse;
+            margin: 25px;
+         }
+         table,th,td{
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+         }
+         table th{
+            background-color: #f2f2f2;
+            font-weight: 600;
+            color: #333;
+         }
+         table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        ul{
+            list-style: none;
+            font-size: 1.1em;
+            padding: 0px;
+        }
+        ul li{
+            margin:12px 0;
+            font-size: 1.1em;
+        }
+        form{
+            max-width: 650px;
+            margin: 25px auto;
+ }
+       form label{
+        display: block;
+        margin-bottom: 8px;
+        font-weight: 600;
+       }
+       form input,form textarea,form button{
+        width: 100%;
+        padding:10px;
+        margin-bottom: 18px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        font-size: 1rem;
+       }
+
+       form input:focus,form textarea:focus{
+        border-color: #2acd3f;
+        outline: none;
+       }
+       form button{
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        cursor: pointer;
+       }
+       form button:hover{
+        background-color: #45a049;
+       }
+       form button:active{
+        
+        background-color:#10be64;
+       }
+
+</style>
+</head>
+<body>
+    <header>
+       <h1>Welcome to Code-A-Thone 2025</h1>
+       <p>Date: June 15-17, 2025</p>
+    </header>
+    <nav>
+    <a href="#about">About</a>
+    <a href="#schedule">Schedule</a>
+    <a href="#speaker">Speaker</a>
+    <a href="#contact">Contact</a>
+
+    </nav>
+    <section id="about">
+        <p> Hackathon 2025 is a tech innovation event where students, 
+            developers, and creators come together to build smart solutions for 
+            the future of Electric Vehicles and sustainable technology. Our goal is to promote 
+            creativity, problem-solving, and hands-on learning through real-world challenges. Participants collaborate, code, innovate, 
+            and present impactful ideas that can shape tomorrow’s mobility.</p>
+    </section>
+    <section id="Schedule">
+        <h2>Event Schedule</h2>
+        <table>
+            <tr>
+                <th>Day</th>
+                <th>Activities</th>
+                <th>Time</th>
+                <th>Contest</th>
+            </tr>
+            <tr>
+                <td>Day1</td>
+                <td>Opening Ceremony, Team Formation, Idea Pitching</td>
+                <td>9:00 AM - 6:00 PM</td>
+                <td>Idea Pitching contest</td>
+            </tr>
+            <tr>
+                <td>Day2</td>
+                <td>Workshop, Coding, Mentoring</td>
+                <td>9:00 AM - 6:00 PM</td>
+                <td>Best Prototype contest</td>
+            </tr>
+            <tr></tr>
+                <td>Day3</td>
+                <td>Final Presentations, Awards Ceremony</td>
+                <td>9:00 AM - 4:00 PM</td>
+                <td>Final Presentation contest</td>
+            </tr>
+        </table>
+    </section>
+    <section id="speaker">
+        <h2>Keynote Speaker</h2>
+        <ul>
+       <li> <p>Dr. Alex Johnson, a leading expert in Electric Vehicle technology and sustainable innovation, will be our keynote speaker. With over 20 years of experience in the automotive industry, Dr. Johnson has been at the forefront of EV research and development, contributing to several groundbreaking projects that have shaped the future of transportation.</p></li> 
+       <li> <p>Dr. Johnson will share insights on the latest trends in EV technology, the challenges and opportunities in the field, and the role of innovation in driving sustainable mobility solutions. Attendees will have the chance to learn from his vast experience and gain inspiration for their own projects during the hackathon.</p></li>
+       <li> <p>Join us to hear Dr. Johnson's vision for the future of electric vehicles and how technology can pave the way for a greener, more sustainable world.</p></li>
+        </ul>
+    </ul>
+</section>
+<section id="Contact">
+    <h2>Contact us</h2>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" requires><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="number">Phone Number:</label>
+        <input type="tel" id="number" name="number" required><br><br>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4"></textarea><br><br>
+        <button type="submit">submit</button>
+
+    </form>
+</section>
+</body>
+</html>
